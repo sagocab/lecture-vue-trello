@@ -1,12 +1,20 @@
 <template>
   <div id="app">
-    여기서부터 코드를 시작합니다!
+    <Navbar></Navbar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+import Home from './components/Home'
+import Login from './components/Login'
+import Navbar from './components/Navbar'
+
 export default {
   name: 'app',
+  components : {
+    Navbar
+  },
   data () {
     return {
     }
